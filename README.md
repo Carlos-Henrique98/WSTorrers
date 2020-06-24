@@ -1,2 +1,2 @@
-# WSTorrers
-Projeto - WSTorrers, aplicativo mobile - Jogos das Seleções - [Grupo3 - AllanMancilha, CarlosHenrique, JurandirHenrique, PedroCecilio]
+# WSTowers
+Projeto - WSTowers, Aplicativo Mobile - Jogo das Seleções - [Grupo3 - AllanMancilha, CarlosHenrique, JurandirHenrique, PedroCecilio]
