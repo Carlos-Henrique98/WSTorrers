@@ -1,17 +1,17 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using WSTowers.Domains;
+using WSTorrer.Domains;
 
-namespace WSTowers.Contexts
+namespace WSTorrer.Contexts
 {
-    public partial class WSTorrersContext : DbContext
+    public partial class CampeonatoContext : DbContext
     {
-        public WSTorrersContext()
+        public CampeonatoContext()
         {
         }
 
-        public WSTorrersContext(DbContextOptions<WSTorrersContext> options)
+        public CampeonatoContext(DbContextOptions<CampeonatoContext> options)
             : base(options)
         {
         }
@@ -26,7 +26,7 @@ namespace WSTowers.Contexts
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-N251D43S\\TEW_SQLEXPRESS; Initial Catalog=WSTorrers; Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-N251D43S\\TEW_SQLEXPRESS; Initial Catalog=Campeonato; Integrated Security=True");
             }
         }
 
@@ -107,11 +107,11 @@ namespace WSTowers.Contexts
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasIndex(e => e.Apelido)
-                    .HasName("UQ__Usuario__571DBAE6D1C1BFFD")
+                    .HasName("UQ__Usuario__571DBAE6C82CFF5E")
                     .IsUnique();
 
                 entity.HasIndex(e => e.Email)
-                    .HasName("UQ__Usuario__A9D10534FE0CD278")
+                    .HasName("UQ__Usuario__A9D10534C98E1295")
                     .IsUnique();
 
                 entity.Property(e => e.Apelido)

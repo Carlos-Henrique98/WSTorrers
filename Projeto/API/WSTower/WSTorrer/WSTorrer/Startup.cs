@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace WSTowers
+namespace WSTorrer
 {
     public class Startup
     {
@@ -33,6 +33,7 @@ namespace WSTowers
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

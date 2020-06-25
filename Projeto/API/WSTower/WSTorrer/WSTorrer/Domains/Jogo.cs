@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WSTowers.Domains
+namespace WSTorrer.Domains
 {
     public partial class Jogo
     {
