@@ -1,4 +1,4 @@
-USE WSTorrers;
+USE Campeonato;
 
 SELECT * FROM Usuario;
 SELECT * FROM Jogo;
