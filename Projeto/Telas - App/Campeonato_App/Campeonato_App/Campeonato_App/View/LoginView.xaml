@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Campeonato_App.View.LoginView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="app_logo.png" Margin="50,50,50,0" WidthRequest="225" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+            <Grid Margin="50,5,50,20" RowSpacing="15" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Image Grid.Column="0" Source="faceCadastro.png" />
+                <Entry Grid.Column="1" Grid.ColumnSpan="2" 
+                    Placeholder="Usuário ou Email" />
+                <Image Grid.Row="1" Source="baseline_lock_black_48dp.png"/>
+                <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                       Placeholder="Senha" IsPassword="True"/>
+            </Grid>
+            <Button Text="Entrar" 
+                        HorizontalOptions="Center" 
+                        CornerRadius="5"
+                        Margin="5"
+                        BackgroundColor="#03A65A"
+                        FontSize="18"
+                        TextColor="White"
+                        WidthRequest="140"/>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Label Text="Cadastre-se" FontSize="20" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="EndAndExpand" Margin="20"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

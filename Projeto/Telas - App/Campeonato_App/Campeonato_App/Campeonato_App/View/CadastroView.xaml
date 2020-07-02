@@ -8,11 +8,11 @@
     <ContentPage.Content>
         <StackLayout 
             VerticalOptions="EndAndExpand" 
-            Padding="30" >
+            Padding="10" >
 
-            <Frame>
-                <Image Source="faceCadastro.png" Margin="50,50,50,0" WidthRequest="350" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-            </Frame>
+            
+                <Image Source="app_logo.png" Margin="50,50,50,0" WidthRequest="300" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+            
 
             <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="4" Margin="0" CornerRadius="1" HorizontalOptions="FillAndExpand"> 
             <StackLayout Orientation="Horizontal">
