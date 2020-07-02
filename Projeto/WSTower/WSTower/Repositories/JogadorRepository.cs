@@ -15,43 +15,6 @@ namespace WSTowers.Repositories
     {
         CampeonatoBDContext ctx = new CampeonatoBDContext();
 
-        //public List<Jogador> ListarInner()
-        //{
-        //    SqlCommand query = new SqlCommand();
-        //    List<Jogador> jogador = new List<Jogador>();
-        //    List<Selecao> selecao = new List<Selecao>();
-
-
-        //        query.CommandText = "SELECT SELECAO.Bandeira, SELECAO.Nome, JOGADOR.Foto, JOGADOR.Posicao, JOGADOR.Nascimento, JOGADOR.NumeroCamisa, JOGADOR.Nome, JOGADOR.Informacoes, JOGADOR.QTDEGols, JOGADOR.QTDECartoesAmarelo, JOGADOR.QTDECartoesVermelho, JOGADOR.QTDEFaltas FROM SELECAO" +
-        //        "INNER JOIN JOGADOR" +
-        //        "ON SELECAO.Id = JOGADOR.SelecaoId";
-
-
-        //        SqlDataReader rdr = query.ExecuteReader();
-
-        //        while (rdr.Read())
-        //        {
-        //            Jogador jogador1 = new Jogador();
-        //            jogador1.Selecao = new Selecao();
-
-        //            jogador1.Selecao.Bandeira = (byte[])rdr["Bandeira"];
-        //            jogador1.Selecao.Nome = (string)rdr["Nome"];
-        //            jogador1.Foto = (byte[])rdr["Foto"];
-        //            jogador1.Posicao = (string)rdr["Posicao"];
-        //            jogador1.Nascimento = (DateTime)rdr["Nascimento"];
-        //            jogador1.NumeroCamisa = (int)rdr["NumeroCamisa"];
-        //            jogador1.Nome = (string)rdr["Nome"];
-        //            jogador1.Informacoes = (string)rdr["Informacoes"];
-        //            jogador1.Qtdegols = (int)rdr["QTDEGols"];
-        //            jogador1.QtdecartoesAmarelo = (int)rdr["QTDECartoesAmarelho"];
-        //            jogador1.QtdecartoesVermelho = (int)rdr["QTDECartoesVermelho"];
-        //            jogador1.Qtdefaltas = (int)rdr["[QTDEFaltas"];
-
-        //            jogador.Add(jogador1);
-        //        }
-        //        return jogador;
-        //}
-
         public List<Jogador> ListarInner()
         {
             return ctx.Jogador.Include(x => x.Selecao).ToList();
