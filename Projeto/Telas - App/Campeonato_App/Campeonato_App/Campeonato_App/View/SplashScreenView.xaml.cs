@@ -8,7 +8,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Campeonato_App.View
-{
+{   
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SplashScreen : ContentPage
     {

@@ -6,10 +6,55 @@
              mc:Ignorable="d"
              x:Class="Campeonato_App.View.SplashScreen">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Spacing="30">
+            
+            <Image Source="app_logo.png" 
+                   Margin="50,100,50,0"
+                   WidthRequest="300" 
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="Center"
+             />
+
+            <Label Text="CAMPEONATO MUNDIAL FIFA 2020"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+             />
+
+            <StackLayout
+                Orientation="Horizontal"
+                VerticalOptions="EndAndExpand"
+                Margin="15, 0, 20, 20">
+
+                <StackLayout
+                    Spacing="20"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label Text="Realização"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="20"
+                     />
+
+                    <Image Source="fifa_logo_edited.png" 
+                       WidthRequest="150"
+                     />
+                </StackLayout>
+
+                <StackLayout
+                    Spacing="20"
+                    HorizontalOptions="EndAndExpand">
+
+                    <Label Text="Apoio"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="20"
+                     />
+
+                    <Image Source="ws_towers.png" 
+                       WidthRequest="150"
+                     />
+                </StackLayout>
+                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

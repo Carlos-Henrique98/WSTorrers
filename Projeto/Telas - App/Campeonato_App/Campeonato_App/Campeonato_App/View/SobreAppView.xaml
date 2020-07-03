@@ -7,9 +7,7 @@
              x:Class="Campeonato_App.View.SobreAppView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Cadastre-se" FontSize="20" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="EndAndExpand" Margin="20"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
