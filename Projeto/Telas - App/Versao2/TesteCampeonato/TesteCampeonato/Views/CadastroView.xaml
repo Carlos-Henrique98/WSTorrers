@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TesteCampeonato.Views.CadastroView">
+    <ContentPage.Content>
+        <StackLayout 
+            VerticalOptions="EndAndExpand" 
+            Padding="10" >
+
+
+            <Image Source="app_logo.png" Margin="50,50,50,0" WidthRequest="300" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="4" Margin="0" CornerRadius="1" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="baseline_person_black_48dp.png" WidthRequest="30"/>
+                    <Entry Placeholder="Nome*" PlaceholderColor="#9E9E9E" FontSize="16"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="4" Margin="0" CornerRadius="1" HorizontalOptions="FillAndExpand" >
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="baseline_person_black_48dp.png" WidthRequest="30" />
+                    <Entry Placeholder="Apelido*" PlaceholderColor="#9E9E9E" FontSize="16" />
+                </StackLayout>
+            </Frame>
+
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="4" Margin="0" CornerRadius="1" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="baseline_email_black_48dp" WidthRequest="30"/>
+                    <Entry Placeholder="Email*" PlaceholderColor="#9E9E9E" FontSize="16" />
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="4" Margin="0" CornerRadius="1" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="baseline_lock_black_48dp" WidthRequest="30" />
+                    <Entry IsPassword="true" Placeholder="Senha*" FontSize="16" />
+                </StackLayout>
+            </Frame>
+
+            <Label Text="{Binding Number, StringFormat='Value is now {0}'}"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+
+
+
+            <Button Text="Cadastrar-se" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="140" 
+                    BackgroundColor="#03A65A" 
+                    TextColor="White" 
+                    BorderWidth="5" 
+                    CornerRadius="10"/>
+
+            <Label Text="{Binding Number, StringFormat='Value is now {0}'}"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+
+            <Button Text="Login" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="White"
+                    TextColor="#048ABF"
+                    Command="{Binding Login}"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
